@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Star Wars</title>
+        <style>
+
+            body{
+                background: url(images/bg.jpg);
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .starwars-demo{
+                height: 17em;
+                left: 50%;
+                position: absolute;
+                top: 53%;
+                transform: translate(-50%, -50%);
+                width: 34em;
+                perspective: 800px;
+                transform-style: preserve-3d ;
+            }
+            .byline span{
+                display: inline-block;
+            }
+            img{
+                width: 100%;
+            }
+            .star, .wars, .byline{
+                position: absolute;
+            }
+            .star{
+                top: -0.75em;
+            }
+            .wars{
+                bottom: -0.5em;
+            }
+            .byline{
+                color: #fff;
+                font-family:Lato;
+                font-size: 2.25em;
+                left: -2.5em;
+                right: -2.5em;
+                text-align: center;
+                text-transform: uppercase;
+                top: 29%;
+            }
+
+            @media only screen and(max-width: 600px){
+                .starwars-demo{
+                    font-size: 10px;
+                }
+            }
+            @media only screen and( max-width: 480px){
+                .starwars-demo{
+                    font-size: 7px;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="starwars-demo">
+            <img src="images/star.svg" alt="Star" class="star">
+            <img src="images/wars.svg" alt="Wars" class="wars">
+            <h2 class="byline" id="byline">T&nbsp;&nbsp;&nbsp;h&nbsp;&nbsp;&nbsp;e &nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;r&nbsp;&nbsp;c&nbsp;&nbsp;&nbsp;e &nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;w&nbsp;&nbsp;&nbsp;a&nbsp;&nbsp;&nbsp;k&nbsp;&nbsp;&nbsp;e&nbsp;&nbsp;&nbsp;n&nbsp;&nbsp;&nbsp;s</h2>
+        </div>
+    </body>
+</html>
