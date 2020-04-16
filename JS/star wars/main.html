@@ -70,7 +70,7 @@
                 }
                 100%{
                     opacity: 0;
-                    transform: translateZ(-100);
+                    transform: translateZ(-100em);
                 }
             }
 
@@ -88,7 +88,7 @@
                 }
                 100%{
                     opacity: 0;
-                    transform: translateZ(-100);
+                    transform: translateZ(-100em);
                 }
             }
 
@@ -102,6 +102,45 @@
             .starwars-demo{
                 perspective: 800px;
                 transform: preserve3d;
+            }
+
+            @keyframes spin{
+                0%, 10%{
+                    opacity: 0;
+                    transform: rotateY(90deg);
+                }
+                30%{
+                    opacity: 1;
+                }
+                70%, 86%{
+                    transform: rotateY(0deg);
+                    opacity: 1;
+                }
+                95%, 100%{
+                    opacity: 0;
+                    transform: rotateY(0deg);
+                }
+            }
+
+            @keyframes move-byline {
+                0%{
+                    opacity: 0;
+                    transform: translateZ(-50em);
+                }
+                89%{
+                    opacity: 1;
+                    transform: translateZ(0);
+                }
+                100%{
+                    transform: translateZ(50em);
+                }
+            }
+
+            .byline span{
+                animation: spin 10s linear infinite;
+            }
+            .byline{
+                animation: move-byline 10s linear infinite;
             }
 
 
