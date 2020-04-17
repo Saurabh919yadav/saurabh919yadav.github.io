@@ -15,6 +15,43 @@ table td {
 }
 
 
+.type{
+    overflow:hidden;
+    display: inline-flex ;
+    border-right: .6em solid yellow ;
+    white-space: nowrap;
+    margin: 10px 5px 0 10px;
+    letter-spacing: .1em;
+    animation:
+    typing 4s steps(10, end),
+    blink-caret .7s step-end infinite;
+}
+@keyframes typing{
+    0%, 70%{width: 0;}
+
+    100%{width: 30%;}
+}
+@keyframes blink-caret {
+    from, to{ border-color: transparent}
+    50%{ border-color: yellow;}
+}
+
+.appear{
+    animation: magic 5s linear ;
+
+}
+@keyframes magic {
+    0%, 99%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
 pre { font-family: 'Source Code Pro', monospace; width: 90%; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
 pre span { display: block; line-height: 1.15rem; } 
 pre span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #888; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; }
@@ -39,7 +76,9 @@ pre a { color: #0bc;}
 </head>
 <body><pre>
             
-    <span><div style="display:inline; color:#0f0">saurabh@ducs</div><div style="display:inline; color:white">:</div><div style="display:inline; color:#ff0096;">~</div><div  style="display: inline; color:#0bc">$</div>cat saurabh.txt</span><span></span>
+    <span><div style="display:inline; color:#0f0">saurabh@ducs</div><div style="display:inline; color:white">:</div><div style="display:inline; color:#ff0096;">~</div><div  style="display: inline; color:#0bc">$</div><div class="type">cat saurabh.txt</div></span>
+    <span></span>
+    <div class= "appear">
     <span>********</span>
     <span><div style="display:inline; color:#0f0">About Me</div></span>
     <span>********</span>
@@ -94,7 +133,7 @@ pre a { color: #0bc;}
 <span>Currently, updating the list of projects.</span>
 <span>Visit my <a href="https://github.com/Saurabh919yadav">github</a> profile to find out more.</span>
 
-
+</div>
 </pre>
 
 </body>
