@@ -1,6 +1,6 @@
 title: Saurabh Yadav
 url: "https://saurabh919yadav.github.io"
-baseurl: "https://saurabh919yadav.github.io"
+baseurl: "index"
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
