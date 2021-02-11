@@ -1,6 +1,6 @@
 title: Saurabh Yadav
 url: "https://saurabh919yadav.github.io"
-baseurl: "/"
+baseurl: "/saurabh919yadav.github.io"
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
@@ -17,7 +17,7 @@ sass:
 
 nav:
  - name: "About"
-   link: "/researcher/"
+   link: "/saurabh919yadav.github.io/"
  - name: "Resume"
    link: "resume.pdf"
  - name: "Contact"
