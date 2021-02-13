@@ -11,6 +11,7 @@ footer: yes
 footer_url: "https://github.com/saurabh919yadav"
 footer_text: ""
 
+remote_theme: ankitsultana/researcher@gem
 sass:
     style: compressed
     sass_dir: _sass
