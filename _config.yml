@@ -1,5 +1,6 @@
 title: Saurabh Yadav
 url: "https://saurabh919yadav.github.io"
+ins_logo: "ins_logo.jpg"
 baseurl: ""
 
 markdown: kramdown
@@ -17,8 +18,8 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "About"
-   link: "about"
+ - name: "NeatAI ServoLab"
+   link: "https://sites.google.com/site/koteswarraojerripothula/neatai-servolab?authuser=0"
  - name: "Resume"
    link: "resume.pdf"
  - name: "Contact"
